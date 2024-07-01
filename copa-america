@@ -57,7 +57,7 @@ https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css
         height: 50px;
         width: 50px;
         background: url('https://i.postimg.cc/d1hHy4ss/11.png') no-repeat;
-        background-size: 40px auto, auto;
+        background-size: 50px auto, auto;
     }
 
 </style>
@@ -67,8 +67,10 @@ https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css
 
 
 <!--  Defult Video Player -->
-<video autoplay="true" controls="true" crossorigin="" id="videoPlayer" playsinline="" poster="https://i.postimg.cc/d1hHy4ss/11.png'">
-    
+<video autoplay="true" controls="true" aspectratio= "" width= "100%"
+crossorigin="" id="videoPlayer" playsinline="" poster="https://i.postimg.cc/d1hHy4ss/11.png'">
+
+                
     
 <source type="application/vnd.apple.mpegurl" 
 src="https://di-j16ei4yq.vo.lswcdn.net/sportitalia/smil:sihd.smil/master.m3u8"> </video>
