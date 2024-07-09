@@ -73,7 +73,7 @@ crossorigin="" id="videoPlayer" playsinline="" poster="https://i.postimg.cc/d1hH
                 
     
 <source type="application/vnd.apple.mpegurl" 
-src="https://edge01.iptv.digijadoo.net/live/nagorik_tv/playlist.m3u8?md5=Rfw3BPR1AF5umCo4NBjMlA&expires=1719876454&user=c15be118d93a464dabf77260596012cf"> </video>
+src="https://sonydaimenew.akamaized.net/hls/live/2037139/DAI28-V3/master_mdh.m3u8?hdnea=st=1720548391~exp=1720548691~acl=*~id=922ec866-cf44-40d3-9e25-c9f3ff9b521d~hmac=196b65d132113fa94591848ed9f1fffad7edebb310f1096e237431a0aa5fe61e&originpath=/linear/hls/pb/event/FWf8sA8dTwCRjczTV9uy-A/stream/05fc5a8d-c7c0-4bdb-a9ce-b6ea66c66f96:SIN2/master.m3u8"> </video>
  
 
 
