@@ -1,26 +1,14 @@
 <!doctype html>
 <html>
-
 <head>
-	<script>
-		function disableClick(){
-			ducument.oneclick=function(event){
-				if (event.button == 2) {
-					alert('Right Click Message');
-					return false;
-				}
-			}
-		}
-	</script>
-	
-	
-<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">	
 
 <link href="https://mdsirome.github.io/webtv/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://mdsirome.github.io/mdsiromebd/mdsiromebd/myFonts/style.css">
 
 <title>Sirome Live TV</title>
 
@@ -76,6 +64,47 @@ a {
 	.thumbnail-slider li a { width: 50px; }
 }
   </style>
+  <style>
+  @import url('https://fonts.maateen.me/adorsho-lipi/font.css');
+  
+  
+  
+      .notice-movies{
+     margin-top:0px;
+     background: ;
+     border:3px solid black;
+     color:black;
+     position:relative;
+     padding:6px;
+     overflow:hidden;
+     font-weight:bold;
+     font-family: 'AdorshoLipi', sans-serif;
+     font-weight:bold;
+     border-radius:7px}
+     
+ .notice-movies::before{
+     content:'';
+     position:absolute;
+     border-left:17px solid var(--black);
+     border-bottom:17px solid var(--black);
+     border-top:17px solid transparent;
+     border-right:17px solid transparent;
+     left:98px;
+     top:0;
+     z-index:1}
+     
+     
+ .notice-movies::after{
+     content:'Disclaimer:';
+     position:absolute;
+     font-weight:bold;
+     line-height:2.5;
+     background:green;
+     color:black;
+     font-family: 'Magisho', sans-serif; 
+     font-weight:600;left:0;top:0}
+
+  </style>
 
 <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -91,6 +120,34 @@ a {
       <iframe name="player" class="embed-responsive-item" allowfullscreen src="https://mdsirome.github.io/webtv/RealMadrid/MU.html"></iframe>
     </div>
   </div>
+  
+<marquee class="notice-movies" scrollamount="8">
+            নোটিশঃ- আমাদের Website এ শুধু মাত্র ক্রিকেট ও ফুটবল খেলা স্ট্রিম করা
+            হয়, পাশাপাশি ভালো যেকোন ইভেন্ট স্ট্রিম করে থাকি। আমাদের এপ্স আপনি
+            খুব সহজে আপনার Android মোবাইলে চালাতে পারবেন। সে জন্য আমাদের সাইটে
+            ডাউনলোড লিংক পেয়ে যাবেন, একই এপ্স আপনার বাসা বাড়ির স্মার্ট টিভিতেও
+            দেখতে পারবেন।......।। Ⓒ কপিরাইট: Sirome TV Stream এই ওইেব প্লাটফর্ম
+            অন্তর্ভুক্ত কোনো চ্যানেল আমরা স্ট্রিম করিনা, সমস্ত স্ট্রিমিং লিংক
+            গুলো ইন্টারনেটে অবাধে উপলব্ধ তৃতীয় পক্ষের ওয়েবসাইট থেকে সংগ্রহ
+            করা। আমরা শুধু স্ট্রিম করার পথ দিচ্ছি এবং সমস্ত সামগ্রী তাদের
+            মালিকের কপিরাইট। - - Ⓒ Copyright:-"Sirome TV Stream" We do not
+            stream any channels included in this Website. All streaming links
+            are collected from third party websites freely available on the
+            internet. We're just giving way to stream and all content is the
+            copyright of their owner...... We are Updating Our Application as We
+            Update Our Application Will Be Send Notification To All User's
+            Thanks For Sirome Live TV -----------</marquee></div>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 <div class="col-xs-12 col-md-2 channel-list">
 <ul class="thumbnail-slider">
     
@@ -222,6 +279,19 @@ a {
 
 </p>
 
-</body>
 
+<script>
+		function disableClick(){
+			ducument.oneclick=function(event){
+				if (event.button == 2) {
+					alert('Right Click Message');
+					return false;
+				}
+			}
+		}
+	</script>
+
+
+	
+</body>
 </html>
