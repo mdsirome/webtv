@@ -1,13 +1,13 @@
-
 <title>Sirome TV</title>
+	
 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
 
-<script src="
-https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css
-" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -50,14 +50,14 @@ https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css
 
       .plyr__video-wrapper::after {
          position: absolute;
-        top: 50%;
+        top: 20%;
         left: 10px;
         z-index: 10;
         content: '';
         height: 50%;
         width: 50%;
         background: url('https://i.postimg.cc/d1hHy4ss/11.png') no-repeat;
-         opacity: 0.3;
+         opacity: 0.4;
          background-size: 50px auto, auto;
 
     }
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Plyr setup with custom controls
     const player = new Plyr(videoPlayer, {
-      controls: ['play-large', 'restart','play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen', 'quality'],
+      controls: ['play-large', 'restart','play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'captions', 'settings', 'pip', 'airplay', 'fullscreen', 'quality'],
       quality: {
         default: 720, // Default quality level (change as needed)
         options: [1080, 720, 480], // Available quality levels
