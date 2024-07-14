@@ -1,10 +1,24 @@
 <!doctype html>
 <html>
+
 <head>
+	<script>
+		function disableClick(){
+			ducument.oneclick=function(event){
+				if (event.button == 2) {
+					alert('Right Click Message');
+					return false;
+				}
+			}
+		}
+	</script>
+	
+	
+<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">	
 
 <link href="https://mdsirome.github.io/webtv/bootstrap.min.css" rel="stylesheet">
 
@@ -25,7 +39,7 @@ a {
     font-family: cursive;
 }
 body {
-    background: #00000078;
+    background: black;
     color: #fff;
 }
 a {
@@ -37,7 +51,7 @@ a {
 .channel-list { padding-left: 0; height: 520px; white-space: nowrap; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
 .thumbnail-slider { margin:0; padding:0;  }
 .thumbnail-slider li { list-style: none; margin-bottom: 10px; }
-.thumbnail-slider li img { width: 85px; border: 3px solid black; height: 85px !important; border-radius: 5px; }
+.thumbnail-slider li img { width: 85px; border: 3px solid #1c8ad9; height: 85px !important; border-radius: 5px; }
 
 
  .channel-list::-webkit-scrollbar {
@@ -48,7 +62,7 @@ a {
  .channel-list::-webkit-scrollbar-thumb {
  border-radius: 10px;
  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
- background-color: #D62929;
+ background-color: #1c8ad9;
 }
 
 
@@ -72,8 +86,8 @@ a {
       .notice-movies{
      margin-top:0px;
      background: ;
-     border:3px solid black;
-     color:black;
+     border:3px solid white;
+     color:white;
      position:relative;
      padding:6px;
      overflow:hidden;
@@ -99,8 +113,8 @@ a {
      position:absolute;
      font-weight:bold;
      line-height:2.5;
-     background:green;
-     color:black;
+     background:#1c8ad9;
+     color:white;
      font-family: 'Magisho', sans-serif; 
      font-weight:600;left:0;top:0}
 
@@ -122,21 +136,22 @@ a {
   </div>
   
 <marquee class="notice-movies" scrollamount="8">
-            নোটিশঃ- আমাদের Website এ শুধু মাত্র ক্রিকেট ও ফুটবল খেলা স্ট্রিম করা
+            নোটিশঃ- Ⓒ কপিরাইট: Sirome TV Stream এই ওইেব প্লাটফর্ম
+            অন্তর্ভুক্ত কোনো চ্যানেল আমরা নিজেরা স্ট্রিম করিনা, সমস্ত স্ট্রিমিং লিংক
+            গুলো ইন্টারনেটের ফ্রি ওয়েব সাইট গুলো হতে বা অবাধে উপলব্ধ তৃতীয় পক্ষের ওয়েবসাইট থেকে সংগ্রহ
+            করা। আমরা শুধু ফ্রিতেই স্ট্রিম করার পথ দিচ্ছি একদম বিনামূল্যে এবং সমস্ত সামগ্রী তাদের
+            মালিকের কপিরাইট , যদি এতে বাংলাদেশের আইনের বিপক্ষে যায় দয়া করে আমাদের ইনফর্ম করে দিবেন, আমরা স্ট্রিমিং বন্ধ করে দেবো । - - - 
+            আমাদের Website এ শুধু মাত্র ক্রিকেট ও ফুটবল খেলা স্ট্রিম করা
             হয়, পাশাপাশি ভালো যেকোন ইভেন্ট স্ট্রিম করে থাকি। আমাদের এপ্স আপনি
             খুব সহজে আপনার Android মোবাইলে চালাতে পারবেন। সে জন্য আমাদের সাইটে
             ডাউনলোড লিংক পেয়ে যাবেন, একই এপ্স আপনার বাসা বাড়ির স্মার্ট টিভিতেও
-            দেখতে পারবেন।......।। Ⓒ কপিরাইট: Sirome TV Stream এই ওইেব প্লাটফর্ম
-            অন্তর্ভুক্ত কোনো চ্যানেল আমরা স্ট্রিম করিনা, সমস্ত স্ট্রিমিং লিংক
-            গুলো ইন্টারনেটে অবাধে উপলব্ধ তৃতীয় পক্ষের ওয়েবসাইট থেকে সংগ্রহ
-            করা। আমরা শুধু স্ট্রিম করার পথ দিচ্ছি এবং সমস্ত সামগ্রী তাদের
-            মালিকের কপিরাইট। - - Ⓒ Copyright:-"Sirome TV Stream" We do not
+            দেখতে পারবেন।...... Ⓒ Copyright:-"Sirome TV Stream" We do not
             stream any channels included in this Website. All streaming links
             are collected from third party websites freely available on the
             internet. We're just giving way to stream and all content is the
             copyright of their owner...... We are Updating Our Application as We
             Update Our Application Will Be Send Notification To All User's
-            Thanks For Sirome Live TV -----------</marquee></div>  
+            Thanks For Sirome Live TV -----------</marquee>
   
   
   
@@ -230,7 +245,7 @@ a {
 
   </div>
 </div> 
-<br>
+<br><br>
 	<div style="text-align: center; background-size: cover;">© Copyright 2024  Developed  By: <img scr="https://gifdb.com/images/high/telegram-cute-blue-shades-logo-vsjoshidc3e9gylv.gif"><a  href="https://www.google.com/search?q=sirome+tv" target="_blank">Sirome TV</a></div>
 
 <br><br>
@@ -249,21 +264,8 @@ a {
 <script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
   
 
-</p><p style="text-align: center;">
-
-  <script type="text/javascript">
-	atOptions = {
-		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
-  
-
-</p><p style="text-align: center;">
+</p>
+	<p style="text-align: center;">
 
   <script type="text/javascript">
 	atOptions = {
@@ -278,20 +280,37 @@ a {
   
 
 </p>
+	<p style="text-align: center;">
 
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
 
-<script>
-		function disableClick(){
-			ducument.oneclick=function(event){
-				if (event.button == 2) {
-					alert('Right Click Message');
-					return false;
-				}
-			}
-		}
-	</script>
+</p>
+	
+<p style="text-align: center;">
 
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fb7e7a4c2a01e949e1973fa5e76c273b',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/fb7e7a4c2a01e949e1973fa5e76c273b/invoke.js"></script>
+
+</p>
 
 	
 </body>
+
 </html>
