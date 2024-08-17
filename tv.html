@@ -31,7 +31,7 @@ a {
 .channel-list { padding-left: 0; height: 0; white-space: nowrap; overflow-y: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
 .thumbnail-slider { margin:10px; padding:0; display: flex; }
 .thumbnail-slider li { list-style: none; margin-right: 10px; flex-shrink: 0; }
-.thumbnail-slider li img { width: 80px; border: 3px solid #1c8ad9; height: 70px !important; border-radius: 5px; }
+.thumbnail-slider li img { width: 100px; border: 3px solid #1c8ad9; height: 75px !important; border-radius: 5px; }
 
 .channel-list::-webkit-scrollbar {
     margin: 10px;
@@ -43,16 +43,16 @@ a {
     border-radius: 10px;
     background-color: #1c8ad9;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    margin: 10px;
+    
 }
 
 @media (max-width: 1199px) {
-    .channel-list { height: 100%; }
+    .channel-list { height: 100px; }
 }
 @media (max-width: 990px) {
     .channel-list { height: auto !important; overflow-x: auto; }
-    .thumbnail-slider li { display: inline-block; margin-right: 5px; }
-    .thumbnail-slider li a { display: block; width: 80px; }
+    .thumbnail-slider li { display: inline-block; margin-right: 120px; }
+    .thumbnail-slider li a { display: block; width: 0px; }
 }
 @media (max-width: 410px) {
     .thumbnail-slider li a { width: 50px; }
