@@ -1,13 +1,14 @@
 
-<title>Sirome TV</title>
+<!doctype html>
+<html>
+<head>	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
 
-
-<script src="
-https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css
-" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -24,20 +25,9 @@ https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.polyfilled.min.js" integrity="sha512-CXGbF3dJwjf6VoLTAitzgDvMH4Hck+s3qJJeq7Klbg0NnFWfyD5rxoK4Z0JGMv+BIlxKJwESN/8RNaqr1/cxQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<title>Sirome TV</title>
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="ENJOY FREE LIVE IPTV M3U8">
-<meta name="keywords" content="Watch live sports streaming online, including football, basketball, baseball, 
-hockey, and more. Stream your favorite sports teams and events in HD, with no cable subscription required.">
-<meta name="author" content="RUBEL BHAI">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" />
-<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <!-- Your existing meta tags and styles -->
 
 <style>
@@ -59,18 +49,18 @@ hockey, and more. Stream your favorite sports teams and events in HD, with no ca
         background-size: 50px 50px, 50px;
     }
 
-    .plyr__video-wrapper::after {
-        position: absolute;
-        top: 40%;
-        left: 20px;
+      .plyr__video-wrapper::after {
+         position: absolute;
+        top: 10%;
+        left: 10px;
         z-index: 10;
         content: '';
-        height: 45%;
-        width: 45%;
+        height: 50%;
+        width: 50%;
         background: url('https://i.postimg.cc/d1hHy4ss/11.png') no-repeat;
          opacity: 0.4;
-        background-size: 100px auto, auto;
-        
+         background-size: 50px auto, auto;
+
     }
 
 </style>
@@ -83,11 +73,26 @@ hockey, and more. Stream your favorite sports teams and events in HD, with no ca
 <video autoplay="true" controls="true" aspectratio= "" width= "100%"
 crossorigin="" id="videoPlayer" playsinline="" poster="https://i.postimg.cc/d1hHy4ss/11.png'">
 
+
+
+
+
+
+
+
+
                 
     
 <source type="application/vnd.apple.mpegurl" 
-src="https://jiotv.nayeemparvez.workers.dev/bpk-tv/Zee_Bangla_HD_MOB/Fallback/Zee_Bangla_HD_MOB.m3u8?"> </video>
+src="https://catchup.yuppcdn.net/amazonv2/36/preview/zeebangla/master/chunklist.m3u8"> </video>
  
+
+
+
+
+
+
+
 
 
 
@@ -97,7 +102,7 @@ src="https://jiotv.nayeemparvez.workers.dev/bpk-tv/Zee_Bangla_HD_MOB/Fallback/Ze
 
 
 
-setTimeout(videovisible, 3000)
+setTimeout(videovisible, 4000)
 
 function videovisible() {
     document.getElementById('loading').style.display = 'none'
@@ -157,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Plyr setup with custom controls
     const player = new Plyr(videoPlayer, {
-      controls: ['play-large', 'restart','play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen', 'quality'],
+      controls: ['play-large', 'restart','play', 'progress', 'current-time', 'duration', 'mute', 'captions', 'settings', 'pip', 'airplay', 'fullscreen', 'quality'],
       quality: {
         default: 720, // Default quality level (change as needed)
         options: [1080, 720, 480], // Available quality levels
