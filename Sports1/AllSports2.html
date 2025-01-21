@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sirome TV</title>
+
+<style>
+        
+@import url('https://fonts.maateen.me/adorsho-lipi/font.css');
+
+
+@import url('https://fonts.maateen.me/apona-lohit/font.css');
+
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+@import url('https://fonts.maateen.me/bensen/font.css');
+
+@import url('https://fonts.maateen.me/charu-chandan-3d/font.css');
+
+@import url('https://fonts.maateen.me/charu-chandan-hard-stroke/font.css');
+
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+@import url('https://fonts.maateen.me/siyam-rupali/font.css');
+
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+@import url('https://fonts.cdnfonts.com/css/sansita-one-3');
+
+@import url('https://fonts.cdnfonts.com/css/abigail-nagita');
+
+@import url('https://fonts.cdnfonts.com/css/sansita-one-3');
+
+@import url('https://fonts.cdnfonts.com/css/american-average');
+
+@import url('https://fonts.cdnfonts.com/css/zasline');
+
+@import url('https://fonts.cdnfonts.com/css/magisho');
+
+@import url('https://fonts.cdnfonts.com/css/virgula-vulgaris');
+</style>
+
+    
+    <style>
+        /* Import fonts */
+        @import url('https://fonts.cdnfonts.com/css/sansita-one-3');
+        @import url('https://fonts.cdnfonts.com/css/american-average');
+        
+        /* Basic body and layout */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0e0e0e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            user-select: none;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        .header h1 {
+            font-size: 35px;
+            color: #fff700;
+            text-transform: uppercase;
+            margin-bottom: 1px;
+            font-family: 'Zasline', sans-serif !important;
+        }
+
+        .header h2 {
+            font-size: 30px;
+            color: #fff700;
+            margin-bottom: -10px;
+            font-family: 'magisho', Arial, sans-serif !important;
+        }
+
+        /* Iframe Container */
+        .iframe-container {
+            position: relative;
+            width: 97%;
+            padding-top: 57%; /* 16:9 Aspect Ratio */
+            margin-top: 20px;
+            border: 5px solid white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Button Styling */
+        .iframe-btn {
+            display: inline-block;
+            width: 100px;
+            height: 65px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            border: 2px solid white;
+            cursor: pointer;
+            font-size: 12px; /* Font size for text inside */
+            font-weight: bold;
+            color: transparent; /* Hide text if image is enough */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        .iframe-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px green;
+        }
+        /* Button Hover Effect */
+        .iframe-btn:hover {
+            opacity: 0.5; /* Slightly darken the button on hover */
+        }
+
+        /* Container for all buttons */
+        #iframe-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .current-time {
+            margin: 0;
+            font-weight:bold;
+            font-family: 'kalpurush','sans-serif '!important;
+        }
+
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1c1c1c;
+            margin-top: 20px;
+            color: #fff;
+            font-family: 'Sansita One', sans-serif;
+        }
+
+        
+        
+
+
+    </style>
+<style>    
+img {
+    display: block;
+    margin: 20px auto; /* Centers images and adds spacing between them */
+    border: none #ccc; /* Optional border for better visibility */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Styles for Image 1 */
+.img1 {
+    width: auto;
+    height:100px;
+    margin-top: 10px;
+    margin-bottom:-20px;
+}
+
+/* Styles for Image 2 */
+.img2 {
+    width: 200px;
+    height: auto;
+    margin-top: -10px;
+    margin-bottom:none;
+}
+
+/* Styles for Image 3 */
+.img3 {
+    width: 400px;
+    height: 100px;
+    margin-top: -30px;
+    margin-bottom:-5px;
+    border-radius: 5px;
+    cursor: pointer; /* Changes the cursor to indicate the image is clickable */
+}
+    </style>
+
+       <style>
+        .refresh-btn {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .refresh-btn img {
+            width:250px;
+            height: 40px;
+            margin-bottom: -10px;
+            margin-top: 3px;
+        }
+    </style> 
+        
+    
+</head>
+<body>
+<img class="img1" src="https://i.postimg.cc/d1hHy4ss/11.png">
+
+<div class="header">
+     
+
+<h2>Today's Sports Match</h2>
+</div>
+
+    <!-- Iframe Container -->
+<div class="iframe-container">
+<iframe id="match-iframe" src="https://mdsirome.github.io/webtv/Sports1/BPL25" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p class="current-time" id="current-time" style="font-family: 'kalpurush','sans-serif '!important; font-weight: bold; font-size: 30px; line-height: 1; background-color: red;"></p>
+    
+
+
+
+
+<span style="font-family: 'kalpurush', sans-serif; font-weight: bold; font-size: 15px; line-height: 1.5;">
+  <div style="text-align: center; background-color: #1c1c1c;">
+      প্রিয় ইউজার, আমরা আপনাদের  সুবিধার্তে একের  অধিক BPL সার্ভার ব্যবহার করেছি, যাতে একটা সার্ভার প্লে না হলে অন্যটি প্লে হয়। চ্যানেল গুলো প্লে হতে ০৫ সেকেন্ড থেকে ১০ বা ১৫ সেকেন্ড অব্দি টাইম নিতে পারে।</div>
+
+    
+    
+<button class="refresh-btn" onclick="location.reload();">
+<img src="https://i.postimg.cc/vHLmxyNR/Untitled.png" alt="Refresh"></button>    
+
+<!-- Stream Buttons -->
+<div id="iframe-links">
+    
+<button class="iframe-btn" style="background-image: url('https://i.postimg.cc/nVWfRHBw/Screenshot-1.png');" onclick="changeIframeSource('https://mdsirome.github.io/webtv/Sports1/BPL25')">Stream 01</button>    
+    
+    
+<button class="iframe-btn" style="background-image: url('https://i.postimg.cc/nVWfRHBw/Screenshot-1.png');" onclick="changeIframeSource('https://mdsirome.github.io/webtv/Sports1/BPL251')">Stream 02</button>    
+
+   
+<button class="iframe-btn" style="background-image: url('https://i.postimg.cc/hPtqf43V/Untitled.png');" onclick="changeIframeSource('https://mdsirome.github.io/webtv/Sports1/Sports1')">Stream 03</button>
+        
+        
+<button class="iframe-btn" style="background-image: url('https://github.com/sirometv/icon/raw/main/Bangla/Sports_All_TV.png');" onclick="changeIframeSource('https://mdsirome.github.io/webtv/Sports1/Sports2')">Stream 04</button>
+
+
+        
+<button class="iframe-btn" style="background-image: url('https://github.com/sirometv/icon/raw/main/Bangla/Sports_All_TV.png');" onclick="changeIframeSource('https://mdsirome.github.io/webtv/Sports/A-Sports')">Stream 05</button>
+
+
+
+
+
+</div>
+<br>
+<span style="font-family: 'Virgula Vulgaris', sans-serif;font-weight: bold; font-size: 25px; line-height: 1.4; color: black">
+  <div style="text-align: center; background-color: white; border: 2px solid #1083e8">💠 Full Screen HD 💠
+  </div></span>
+<!-- Stream Buttons -->
+<div id="iframe-links">
+
+
+
+<a href="go:S1"> 
+<button 
+ class="iframe-btn" 
+style="background-image: url('https://i.postimg.cc/nVWfRHBw/Screenshot-1.png');" 
+        > S1 </button></a>
+        
+        
+
+
+<a href="go:S2"> 
+<button 
+ class="iframe-btn" 
+style="background-image: url('https://i.postimg.cc/nVWfRHBw/Screenshot-1.png');" 
+        > S2 </button></a>
+
+
+
+<a href="go:S3"> 
+<button 
+ class="iframe-btn" 
+style="background-image: url('https://i.postimg.cc/hPtqf43V/Untitled.png');" 
+        > S3 </button></a>
+
+
+<a href="go:S4"> 
+<button 
+ class="iframe-btn" 
+style="background-image: url('https://github.com/sirometv/icon/raw/main/Bangla/Sports_All_TV.png');" 
+        > S4</button></a>
+
+
+
+<a href="go:S5"> 
+<button 
+ class="iframe-btn" 
+style="background-image: url('https://github.com/sirometv/icon/raw/main/Bangla/Sports_All_TV.png');" 
+        > S6</button></a>
+
+
+
+<a href="go:S6"> 
+<button 
+ class="iframe-btn" 
+style="background-image: url('https://github.com/sirometv/icon/raw/main/Bangla/Sports_All_TV.png');" 
+        > S6 </button></a>
+
+
+
+
+
+
+
+
+</div>
+<hr color="#FFFFFF" size="5.0" />
+<img class="img2" src="https://www.bplt20.com.bd/images/bpl-logo-2025.gif" alt="BPL Logo">
+        
+        
+        
+
+<a href="https://d-15.winudf.com/b/APK/Y29tLnNpcm9tZXR2Lm9ubGluZV8xM18zNzQ1ZjAwNg?_fn=U2lyb21lIFRWXzEwLjVfQVBLUHVyZS5hcGs&_p=Y29tLnNpcm9tZXR2Lm9ubGluZQ%3D%3D&download_id=1149306044153462&is_hot=false&k=a39c2441596e0ffed29ba2d53e19dd5b678106a3" target="_blank">
+<img src="https://i.postimg.cc/kXj29dsg/Sports-All-TV.png" alt="Example Image 3" class="img3"></a>
+        
+        
+ <br>       
+   <!-- BEGIN: অনলাইন  কাউন্টার -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1670620,"ffffff","e61c1c");</script><br><noscript><a href="sirometv.blogspot.com">online counter</a></noscript>
+</center>
+<!-- END: Powered by Supercounters.com -->
+        
+    <!-- Footer -->
+<div class="footer">
+<p>Powered by Sirome TV 2022 - 2025</p></div>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to change the iframe source
+        function changeIframeSource(url) {
+            document.getElementById('match-iframe').src = url;
+        }
+
+        // Current time display
+        function updateCurrentTime() {
+            const now = new Date();
+            const currentTime = now.toLocaleTimeString();
+            document.getElementById('current-time').textContent = `Current Time: ${currentTime}`;
+        }
+        setInterval(updateCurrentTime, 1000);
+    </script>
+     
+   
+</body>
+</html>
