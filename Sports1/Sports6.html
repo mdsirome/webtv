@@ -1,78 +1,59 @@
-<title>Sirome TV</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<meta name="keywords" content="Watch live sports streaming online, including football, basketball, baseball, 
-hockey, and more. Stream your favorite sports teams and events in HD, with no cable subscription required.">
-<meta name="author" content="Sirome TV">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-
-<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" />
-
-
-  <!-- Your existing meta tags and styles -->
-
-
-
-
-
-<style>
-::-webkit-scrollbar{
-  display: block;
-  width: 100%;
-  overflow: fixed;
-  height: 100%;
-}
-*{
-    -ms-overflow-style:none;
-    scrollbar-width:none
-}
-body{
-    
-    background:black;
-    line-height:;
-    color:white;
-    text-align:center;
-    user-select: none;
-    font-family: 'Kalpurush', Arial, sans-serif !important;
-    font-family: 'Virgula Vulgaris', sans-serif !important;
-    
-    
-}
-
-
-
-    .plyr__video-wrapper::before {
-        position: absolute;
-        top: 10%;
-        right: 10px;
-        z-index: 10;
-        content: '';
-        height: 35px;
-        width: 65px;
-        background: url('') no-repeat;
-        background-size: 50px 50px, 50px;
-    }
-
-    .plyr__video-wrapper::after {
-        position: absolute;
-        top: 40%;
-        left: 50px;
-        z-index: 10;
-        content: '';
-        height: 45%;
-        width: 45%;
-        background: url('https://i.postimg.cc/d1hHy4ss/11.png') no-repeat;
-         opacity: 0.5;
-        background-size: 60px auto, auto;
-        
-    }
-
-</style>
-
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirome TV</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden; /* Hides the scrollbar */
+            font-family: 'Magisho', sans-serif !important; 
+        }
+        @import url('https://fonts.cdnfonts.com/css/magisho');
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Ensures no scrolling */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        .logo-container {
+            position: absolute;
+            top: 30%;
+            left: 11%;
+            z-index: 10;
+            text-align: center;
+            pointer-events: none; /* Prevents interaction blocking */
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+            background: url('https://i.postimg.cc/d1hHy4ss/11.png') no-repeat center;
+            background-size: contain;
+            opacity: 0.3;
+        }
+        .powered-by {
+            margin-top: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'magisho', Arial, sans-serif !important;
+            @import url('https://fonts.cdnfonts.com/css/magisho');
+            color: black;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+            opacity: 0.3;
+        }
+    </style>
+    <style>
     .overflow, .circle-line {
     position: absolute;
     top: 50%;
@@ -134,10 +115,9 @@ body{
 }
 
 </style>
-  
 </head>
 <body>
-<!-- Overflow Loader -->
+    <!-- Overflow Loader -->
     <div id="overlay" class="overflow">
         <div class="circle-line">
             <div class="circle-blue"></div>
@@ -153,130 +133,43 @@ body{
     
     
     
-
-<!--  Defult Video Player -->
-<video autoplay="true" controls="true" aspectratio= "" width= "100%"
-crossorigin="" id="videoPlayer" playsinline="" poster="https://i.postimg.cc/d1hHy4ss/11.png'">
-
-                
-
-
-
-
-
-
-
-
-
-
     
-<source type="application/vnd.apple.mpegurl" 
-src="https://streamline.sturls.com/SonySportsTen02/index.fmp4.m3u8?token=459367b5da0944e1aab40e51c7b85030c2d6309d-12187bbc1033f06974e245e34cada96a-1738253271-1738242471"> </video>
-<!--  https://sportstvn.com/ এখানেই সোর্স  --> 
+    
+    
+    
+<div class="iframe-container">
+<iframe src="https://secureplayer.sportstvn.com/token.php?stream=SuperSportsCricket" allowfullscreen></iframe>
+        
+        
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        
+        
+        
+        <!-- Logo & Powered by Text -->
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="powered-by">Powered by: Sirome TV</div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
-
-
-<script>
-
-setTimeout(videovisible, 3000)
-
-function videovisible() {
-    document.getElementById('loading').style.display = 'none'
-}
-document.addEventListener("DOMContentLoaded", () => {
-    const e = document.querySelector("video"),
-        n = e.getElementsByTagName("source")[0].src,
-        o = {};
-    if (Hls.isSupported()) {
-        var config = {
-            maxMaxBufferLength: 100,
-        };
-        const t = new Hls(config);
-        t.loadSource(n), t.on(Hls.Events.MANIFEST_PARSED, function(n, l) {
-            const s = t.levels.map(e => e.height);
-            o.quality = {
-                default: s[0],
-                options: s,
-                forced: !0,
-                onChange: e => (function(e) {
-                    window.hls.levels.forEach((n, o) => {
-                        n.height === e && (window.hls.currentLevel = o)
-                    })
-                })(e)
-            };
-            new Plyr(e, o)
-        }), t.attachMedia(e), window.hls = t
-    } else {
-        new Plyr(e, o)
-    }
-});
-</script>
-
-
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const videoPlayer = document.getElementById('videoPlayer');
-    const serverButtons = document.querySelectorAll('.server-button');
-
-    serverButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const newSource = button.getAttribute('data-source');
-        videoPlayer.src = newSource;
-
-        if (Hls.isSupported()) {
-          const hls = new Hls();
-          hls.loadSource(newSource);
-          hls.attachMedia(videoPlayer);
-        }
-
-        videoPlayer.play();
-      });
-    });
-
-    // Plyr setup with custom controls
-    const player = new Plyr(videoPlayer, {
-      controls: ['play-large', 'restart','play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', , 'captions', 'settings', 'pip', 'airplay', 'fullscreen', 'quality'],
-      quality: {
-        default: 480, // Default quality level (change as needed)
-        options: [1080, 720, 480,360,240], // Available quality levels
-        forced: true, // Forced quality - the player will start with the default quality
-        onChange: quality => {
-          // Handle quality change here (e.g., switch video source or quality)
-          // You can modify this function to change the video quality dynamically
-          console.log('Selected quality:', quality);
-        },
-      },
-    });
-  });
-</script>
-
-
-<script>
-    // ৫ সেকেন্ড পর লোডিং অ্যানিমেশন বন্ধ করা হবে
-    setTimeout(() => {
-        document.querySelector('.overflow').style.display = 'none';
-    }, 6000);
-</script>
-
-
+    <script>
+        // Remove loading animation after 6 seconds
+        setTimeout(() => {
+            document.querySelector('.overflow').style.display = 'none';
+        }, 6000);
+    </script>
 </body>
 </html>
