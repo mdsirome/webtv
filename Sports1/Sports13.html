@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="Watch live sports streaming online, including football, basketball, baseball, 
+hockey, and more. Stream your favorite sports teams and events in HD, with no cable subscription required.">
+<meta name="author" content="Sirome TV">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+<title>Sirome TV</title>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css" rel="stylesheet">
+
+
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/d1hHy4ss/11.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css" />
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <!-- Your existing meta tags and styles -->
+
+
+
+
+
+<style>
+::-webkit-scrollbar{
+  display: block;
+  width: 100%;
+  overflow: fixed;
+  height: 100%;
+}
+*{
+    -ms-overflow-style:none;
+    scrollbar-width:none
+}
+body{
+    
+    background:black;
+    line-height:;
+    color:white;
+    text-align:center;
+    user-select: none;
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+    font-family: 'Virgula Vulgaris', sans-serif !important;
+    
+    
+}
+
+
+
+    .plyr__video-wrapper::before {
+        position: absolute;
+        top: 10%;
+        right: 10px;
+        z-index: 10;
+        content: '';
+        height: 35px;
+        width: 65px;
+        background: url('') no-repeat;
+        background-size: 50px 50px, 50px;
+    }
+
+    .plyr__video-wrapper::after {
+        position: absolute;
+        top: 40%;
+        left: 50px;
+        z-index: 10;
+        content: '';
+        height: 45%;
+        width: 45%;
+        background: url('https://i.postimg.cc/d1hHy4ss/11.png') no-repeat;
+         opacity: 0.5;
+        background-size: 60px auto, auto;
+        
+    }
+
+</style>
+
+<style>
+    .overflow, .circle-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overflow {
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.circle-line {
+    z-index: 9999;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle-blue, .circle-red, .circle-green, .circle-yellow {
+    position: relative; /* ✅ এনিমেশনের জন্য আবশ্যক */
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 8px;
+}
+
+.circle-blue {
+    background-color: #0F90FA;
+    animation: movingUp 0.5s infinite alternate;
+}
+
+.circle-red {
+    background-color: #E62E1E;
+    animation: movingUp 0.5s 0.2s infinite alternate;
+}
+
+.circle-green {
+    background-color: #34A853;
+    animation: movingUp 0.5s 0.5s infinite alternate;
+}
+
+.circle-yellow {
+    background-color: #FBBC04;
+    animation: movingUp 0.5s 0.7s infinite alternate;
+}
+
+/* ✅ CSS ANIMATION */
+@keyframes movingUp {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -30px;
+    }
+}
+
+</style>
+  
+</head>
+<body>
+<!-- Overflow Loader -->
+    <div id="overlay" class="overflow">
+        <div class="circle-line">
+            <div class="circle-blue"></div>
+            <div class="circle-red"></div>
+            <div class="circle-green"></div>
+            <div class="circle-yellow"></div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+<!--  Defult Video Player -->
+<video autoplay="true" controls="true" aspectratio= "" width= "100%"
+crossorigin="" id="videoPlayer" playsinline="" poster="https://i.postimg.cc/d1hHy4ss/11.png'">
+
+                
+
+
+
+
+
+
+
+
+
+
+    
+<source type="application/vnd.apple.mpegurl" 
+src="https://streamline.sturls.com/ASports/tracks-v1/index.fmp4.m3u8?token=f36964386c2526314d1825022fb9a6d31bf0cb50-143a43dd6d34974bf43ee96250fe6ecb-1738405351-1738394551"> </video>
+<!--  https://sportstvn.com/ এখানেই সোর্স  --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
+
+
+<script>
+
+setTimeout(videovisible, 3000)
+
+function videovisible() {
+    document.getElementById('loading').style.display = 'none'
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const e = document.querySelector("video"),
+        n = e.getElementsByTagName("source")[0].src,
+        o = {};
+    if (Hls.isSupported()) {
+        var config = {
+            maxMaxBufferLength: 100,
+        };
+        const t = new Hls(config);
+        t.loadSource(n), t.on(Hls.Events.MANIFEST_PARSED, function(n, l) {
+            const s = t.levels.map(e => e.height);
+            o.quality = {
+                default: s[0],
+                options: s,
+                forced: !0,
+                onChange: e => (function(e) {
+                    window.hls.levels.forEach((n, o) => {
+                        n.height === e && (window.hls.currentLevel = o)
+                    })
+                })(e)
+            };
+            new Plyr(e, o)
+        }), t.attachMedia(e), window.hls = t
+    } else {
+        new Plyr(e, o)
+    }
+});
+</script>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const videoPlayer = document.getElementById('videoPlayer');
+    const serverButtons = document.querySelectorAll('.server-button');
+
+    serverButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const newSource = button.getAttribute('data-source');
+        videoPlayer.src = newSource;
+
+        if (Hls.isSupported()) {
+          const hls = new Hls();
+          hls.loadSource(newSource);
+          hls.attachMedia(videoPlayer);
+        }
+
+        videoPlayer.play();
+      });
+    });
+
+    // Plyr setup with custom controls
+    const player = new Plyr(videoPlayer, {
+      controls: ['play-large', 'restart','play', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', , 'captions', 'settings', 'pip', 'airplay', 'fullscreen', 'quality'],
+      quality: {
+        default: 480, // Default quality level (change as needed)
+        options: [1080, 720, 480,360,240], // Available quality levels
+        forced: true, // Forced quality - the player will start with the default quality
+        onChange: quality => {
+          // Handle quality change here (e.g., switch video source or quality)
+          // You can modify this function to change the video quality dynamically
+          console.log('Selected quality:', quality);
+        },
+      },
+    });
+  });
+</script>
+
+
+<script>
+    // ৫ সেকেন্ড পর লোডিং অ্যানিমেশন বন্ধ করা হবে
+    setTimeout(() => {
+        document.querySelector('.overflow').style.display = 'none';
+    }, 6000);
+</script>
+
+
+</body>
+</html>
